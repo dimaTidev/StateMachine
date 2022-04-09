@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49b79b0c89e6d14084bf80af90a28c5, type: 3}
+  m_Name: State_down
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: 393cdb11fc8f01a43b536c2f84ff9f5c, type: 2}
+  transitions:
+  - e_name: To Up
+    decisions:
+    - {fileID: 11400000, guid: f26d044a11e44cf45b69d5849775edf9, type: 2}
+    - {fileID: 11400000, guid: 8cfdb1197234497419320bcef57c3009, type: 2}
+    stateTrue: {fileID: 11400000, guid: 138d2c2c09e4dd443ae770a7d47f3d40, type: 2}
+  e_gizmosColor: {r: 1, g: 0, b: 0.012010574, a: 1}

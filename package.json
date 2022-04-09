@@ -1,0 +1,26 @@
+{
+    "name": "com.dimati.state.machine",
+    "displayName": "State Machine",
+    "version": "0.0.1",
+    "unity": "2018.4",
+    "unityRelease": "",
+    "description": "",
+    "author": "DimaTi <timofeenkodima@gmail.com> (https://github.com/dimaTidev)",
+    "keywords": [],
+    "category": "Base",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dimaTidev/StateMachine.git"
+    },
+    "gitDependencies": {
+    },
+    "dependencies": {
+    },
+    "samples": [
+        {
+            "displayName": "Example machine",
+            "description": "Contains Example machine with scripts and scriptable objects",
+            "path": "Samples~/Example_machine"
+        }
+    ]
+}
