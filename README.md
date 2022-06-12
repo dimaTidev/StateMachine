@@ -1,6 +1,7 @@
 # StateMachine (ScriptableObject based)
 
-Abstract layer of State Machine. With example of use.
+Abstract layer of State Machine. With example of use. \
+After creating all scripts, it's very easy to change states just in the inspector (by drag&drop scriptableObjects without coding).
 
 ## How to setup
 
