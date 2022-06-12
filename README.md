@@ -17,7 +17,7 @@ After creating all scripts, it's very easy to change states just in the inspecto
 
 
 
-P.S. Create partial `StateMashine.cs` for easy adding new features through creating new scripts
+> Create partial `StateMashine.cs` for easy adding new features through creating new scripts
 
 ## Links
 
