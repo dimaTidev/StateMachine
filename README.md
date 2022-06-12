@@ -1,3 +1,4 @@
+![Unity Version](https://img.shields.io/badge/Unity-2020.3.31-blue.svg)
 # StateMachine (ScriptableObject based)
 
 Abstract layer of State Machine. With example of use. \
@@ -10,10 +11,13 @@ After creating all scripts, it's very easy to change states just in the inspecto
 3. Create script `Decision.cs` and inherit from `ADecision.cs`
 4. Create script `State.cs` and inherit from `AState.cs`
 5. Create scriptableObjects of `Action`, `Decision`, `State`.
-6. Setup `State` by `Action` and `Decision`
+6. Setup `State` by `Action` and `Decision`\
+![](Documents~/StateScreen.jpg)
 7. Add `Manager` to character and put `State` to the `Manager.DefaultState`
 
-P.S. Create partial StateMashine.cs for easy adding new features through creating new scripts
+
+
+P.S. Create partial `StateMashine.cs` for easy adding new features through creating new scripts
 
 ## Links
 
