@@ -31,7 +31,26 @@ namespace DimaTi.StateMachine
 
         void Update() => CurState.UpdateState(this);
 
-        void LateUpdate() => CurState = CurState.CheckTransitions(this);
+        void LateUpdate() => ChangeTransition(CurState.CheckTransitions(this));
+
+        void ChangeTransition(AState state)
+        {
+            if(state == null)
+            {
+                CurState = null;
+                return;
+            }
+
+            if(CurState == null || state.GetInstanceID() != CurState.GetInstanceID()) //came new state
+            {
+#if UNITY_EDITOR
+                for (int i = 1; i < lastStates.Length; i++)
+                    lastStates[i - 1] = lastStates[i];
+                lastStates[lastStates.Length - 1] = CurState;
+#endif
+                CurState = state;
+            }
+        }
 
 
 #if UNITY_EDITOR
@@ -39,6 +58,9 @@ namespace DimaTi.StateMachine
         //[SerializeField] float e_gizmoSize = 0.8f;
         [SerializeField] bool e_isShowCurState_byGizmos;
         [SerializeField] bool e_isShowStates_byGizmos;
+
+        AState[] lastStates = new AState[5];
+
         void OnDrawGizmosSelected()
         {
             if (CurState)
